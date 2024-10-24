@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Target: Dice Form</title>
+</head>
+
+<body>
+<h1><%=@num_dice%>d<%=@sides_dice%></h1> 
+
+<div class="navbar">
+  <div>Roll again </div> <!-- need to include link to the same page -->
+  <div>|</div>
+  <div><a href="/">Go back home</a> </div>
+</div>
+
+<!-- <%=params.fetch("number")%>
+      <%=params.fetch("count")%>-->
+
+<p><ol>
+    <% @rolls.each do |a_roll| %>
+    <li>Result: <%= a_roll %></li>
+    </ol>
+<!-- Need to make this ordered list dynamic, tied to number of dice -->
+</body>
+</html>
